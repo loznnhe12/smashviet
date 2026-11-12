@@ -107,10 +107,11 @@ body.keys .keyhelp{display:flex;position:absolute;left:50%;transform:translateX(
 .keyhelp kbd.on{background:#ffd23f;color:#111;border-color:#c9a316;transform:translateY(2px)}
 .keyhelp .kh{font-weight:900}.keyhelp .kh.high{color:#5aa2ff}.keyhelp .kh.attack{color:#ff5a6a}.keyhelp .kh.soft{color:#4cd39a}
 .keyhelp .d{color:#8f9ab8;font-size:11px}
+body.keys #gl{cursor:crosshair}
 </style></head>
 <body><div id="ui"></div><div id="hud"></div>
 <script>(function(){var L=["xbot.glb","body_M.bin","body_F.bin","mocap.bin"],A=globalThis.__SV_A={},n=0,ui=document.getElementById('ui');
 function bar(){ui.innerHTML='<div class="scr dim" style="display:flex;align-items:center;justify-content:center;flex-direction:column"><h1>SMASH <b>VIỆT</b></h1><div class="sub">Đang tải sân đấu… '+Math.round(n/L.length*100)+'%</div></div>';}
-bar();Promise.all(L.map(function(f){return fetch(f+'?v=mwdo4o0u').then(function(r){if(!r.ok)throw new Error(f+' '+r.status);return r.arrayBuffer();}).then(function(b){A[f]=new Uint8Array(b);n++;bar();});}))
-.then(function(){var s=document.createElement('script');s.src='game.js?v=mwdo4o0u';document.body.appendChild(s);})
+bar();Promise.all(L.map(function(f){return fetch(f+'?v=mwdoxpxj').then(function(r){if(!r.ok)throw new Error(f+' '+r.status);return r.arrayBuffer();}).then(function(b){A[f]=new Uint8Array(b);n++;bar();});}))
+.then(function(){var s=document.createElement('script');s.src='game.js?v=mwdoxpxj';document.body.appendChild(s);})
 .catch(function(e){ui.innerHTML='<div class="scr dim"><h2>Không tải được game</h2><p>'+e.message+'</p><p>Kiểm tra mạng rồi tải lại trang.</p></div>';});})();</script></body></html>
