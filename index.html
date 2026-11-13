@@ -112,10 +112,12 @@ body.keys .keyhelp .kh{font-size:12px;white-space:nowrap}
 
 body.keys .keyhelp.dim{opacity:.3}
 @media (max-width:640px){body.keys .keyhelp{display:none}}
+body.crun .keyhelp .mv-keys{display:none}
+body:not(.crun) .keyhelp .mv-click{display:none}
 </style></head>
 <body><div id="ui"></div><div id="hud"></div>
 <script>(function(){var L=["xbot.glb","body_M.bin","body_F.bin","mocap.bin"],A=globalThis.__SV_A={},n=0,ui=document.getElementById('ui');
 function bar(){ui.innerHTML='<div class="scr dim" style="display:flex;align-items:center;justify-content:center;flex-direction:column"><h1>SMASH <b>VIỆT</b></h1><div class="sub">Đang tải sân đấu… '+Math.round(n/L.length*100)+'%</div></div>';}
-bar();Promise.all(L.map(function(f){return fetch(f+'?v=mweb7pmh').then(function(r){if(!r.ok)throw new Error(f+' '+r.status);return r.arrayBuffer();}).then(function(b){A[f]=new Uint8Array(b);n++;bar();});}))
-.then(function(){var s=document.createElement('script');s.src='game.js?v=mweb7pmh';document.body.appendChild(s);})
+bar();Promise.all(L.map(function(f){return fetch(f+'?v=mwes0xl5').then(function(r){if(!r.ok)throw new Error(f+' '+r.status);return r.arrayBuffer();}).then(function(b){A[f]=new Uint8Array(b);n++;bar();});}))
+.then(function(){var s=document.createElement('script');s.src='game.js?v=mwes0xl5';document.body.appendChild(s);})
 .catch(function(e){ui.innerHTML='<div class="scr dim"><h2>Không tải được game</h2><p>'+e.message+'</p><p>Kiểm tra mạng rồi tải lại trang.</p></div>';});})();</script></body></html>
